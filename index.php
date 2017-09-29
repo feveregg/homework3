@@ -10,6 +10,8 @@ $obj->joinstring();
 $obj->lowercase();
 $obj->splitstring($text);
 $obj->stringcmp();
+$obj->stringlen($text);
+
 
 
 class main {
@@ -93,6 +95,14 @@ class main {
    }
    echo "<hr>";
 
+   }
+
+   public function stringlen($text) {
+   
+   echo "<h1>string length function demo</h1>";
+   echo strlen($text);
+   echo "<hr>";
+   
    }
 
 
