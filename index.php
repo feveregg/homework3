@@ -21,7 +21,7 @@ $obj->uppercase();
 $obj->arraychunk();
 $obj->arrcombine();
 $obj->arrcount();
-
+$obj->arrmerge();
 
 
 
@@ -176,6 +176,17 @@ class main {
    $fruits = array("apple", "lemon", "banana", "apple", "banana");
    print_r(array_count_values($fruits));
    echo"<hr>";
+   
+   }
+
+
+   public function arrmerge() {
+   
+   echo"<h1>array merge function demo</h1>";
+   $sentence1 = array("hello ", "i ", "am ");
+   $sentence2 = array("Kevin ", "Kao ", "!");
+   print_r(array_merge($sentence1, $sentence2));
+   echo "<hr>";
    
    }
 
