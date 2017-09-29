@@ -19,7 +19,7 @@ $array = array(1, 2, 3, 4, 5, 6, 7, 8, 9);
 $obj->printarray($array);
 $obj->uppercase();
 $obj->arraychunk();
-
+$obj->arrcombine();
 
 
 
@@ -154,6 +154,27 @@ class main {
    echo "<hr>";
    
    }
+
+
+   public function arrcombine() {
+   
+   echo "<h1>array combine function demo </h1>";
+   $fname = array("Peter", "Ben", "Joe");
+   $age = array("35" ,"37", "43");
+   print_r(array_combine($fname, $age));
+   echo "<hr>";
+   
+   }
+
+
+
+
+
+
+
+
+
+
 
 }
 
