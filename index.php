@@ -23,7 +23,8 @@ $obj->printarray($array);
 class main {
 
    public function printThis($text) {
- 
+   
+   echo "<h1>String</h1>";
    echo '<h1>print function demo</h1>';
    print($text);
    echo'<hr>';
@@ -118,12 +119,12 @@ class main {
 
 
 
-
-
+ 
 
 
    public function printarray($array) {
    
+   echo "<h1>Array</h1>";
    echo "<h1>print array demo</h1>";
    print_r($array);
    echo "<hr>";
