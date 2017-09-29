@@ -7,6 +7,10 @@ $obj->cslash($text);
 $obj->character($text);
 $obj->splitthis();
 $obj->joinstring();
+$obj->lowercase();
+
+
+
 
 class main {
 
@@ -56,6 +60,16 @@ class main {
    echo "<h1>implode function demo</h1>";
    $str = array("this","is","text","example");
    echo implode (" ",$str);
+   echo "<hr>";
+   
+   }
+
+   public function lowercase() {
+   
+   echo "<h1>lowercase function demo</h1>";
+   $str = "HELLO WORLD";
+   $str = lcfirst($str);
+   echo "$str";
    echo "<hr>";
    
    }
