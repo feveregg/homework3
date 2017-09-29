@@ -20,6 +20,9 @@ $obj->printarray($array);
 $obj->uppercase();
 $obj->arraychunk();
 $obj->arrcombine();
+$obj->arrcount();
+
+
 
 
 
@@ -163,6 +166,16 @@ class main {
    $age = array("35" ,"37", "43");
    print_r(array_combine($fname, $age));
    echo "<hr>";
+   
+   }
+
+
+   public function arrcount() {
+   
+   echo "<h1>array count function demo</h1>";
+   $fruits = array("apple", "lemon", "banana", "apple", "banana");
+   print_r(array_count_values($fruits));
+   echo"<hr>";
    
    }
 
