@@ -17,6 +17,9 @@ $obj->stringlen($text);
 
 $array = array(1, 2, 3, 4, 5, 6, 7, 8, 9);
 $obj->printarray($array);
+$obj->uppercase();
+$obj->arraychunk();
+
 
 
 
@@ -129,6 +132,26 @@ class main {
    print_r($array);
    echo "<hr>";
    
+   
+   }
+
+
+   public function uppercase() {
+   
+   echo "<h1>uppercase array demo</h1>";
+   $array1 = array("hello"=>"first", "world"=>"second");
+   print_r(array_change_key_case($array1, CASE_UPPER));
+   echo "<hr>";
+   
+   }
+
+
+   public function arraychunk() {
+   
+   echo "<h1>array chunk demo</h1>";
+   $array2 = array(a, b, c, d, e, f);
+   print_r(array_chunk($array2, 2));
+   echo "<hr>";
    
    }
 
