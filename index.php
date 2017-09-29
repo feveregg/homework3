@@ -8,7 +8,7 @@ $obj->character($text);
 $obj->splitthis();
 $obj->joinstring();
 $obj->lowercase();
-
+$obj->splitstring($text);
 
 
 
@@ -70,6 +70,15 @@ class main {
    $str = "HELLO WORLD";
    $str = lcfirst($str);
    echo "$str";
+   echo "<hr>";
+   
+   }
+
+   public function splitstring($text) {
+   
+   echo "<h1>splitstring function demo</h1>";
+   $spt = str_split($text);
+   print_r($spt);
    echo "<hr>";
    
    }
