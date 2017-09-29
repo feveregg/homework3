@@ -14,6 +14,12 @@ $obj->stringlen($text);
 
 
 
+
+$array = array(1, 2, 3, 4, 5, 6, 7, 8, 9);
+$obj->printarray($array);
+
+
+
 class main {
 
    public function printThis($text) {
@@ -108,7 +114,24 @@ class main {
 
 
 
+
+
+
+
+
+
+
+
+   public function printarray($array) {
+   
+   echo "<h1>print array demo</h1>";
+   print_r($array);
+   echo "<hr>";
+   
+   
+   }
+
 }
 
-
 ?>
+
