@@ -9,7 +9,7 @@ $obj->splitthis();
 $obj->joinstring();
 $obj->lowercase();
 $obj->splitstring($text);
-
+$obj->stringcmp();
 
 
 class main {
@@ -81,6 +81,18 @@ class main {
    print_r($spt);
    echo "<hr>";
    
+   }
+
+   public function stringcmp() {
+   
+   echo "<h1>string comarision demo</h1>";
+   $var1 = "hello";
+   $var2 = "world";
+   if (strcmp($var1, $var2)!==0) {
+     echo "var1 and var2 are not equal";
+   }
+   echo "<hr>";
+
    }
 
 
