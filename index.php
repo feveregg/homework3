@@ -4,6 +4,9 @@ $obj = new main();
 $obj->printthis($text);
 $obj->trimthis($text);
 $obj->cslash($text);
+$obj->character($text);
+
+
 
 class main {
 
@@ -30,6 +33,17 @@ class main {
    echo "<hr>";
 
    }
+
+   public function character($text) {
+
+   echo "<h1>character function demo</h1>";
+   echo chr(072);
+   echo "<hr>";
+
+   }
+
+
+
 
 }
 
