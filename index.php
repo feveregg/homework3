@@ -5,7 +5,7 @@ $obj->printthis($text);
 $obj->trimthis($text);
 $obj->cslash($text);
 $obj->character($text);
-
+$obj->splitthis();
 
 
 class main {
@@ -40,6 +40,15 @@ class main {
    echo chr(074);
    echo "<hr>";
 
+   }
+
+   public function splitthis() {
+   
+   echo "<h1>explode function demo</h1>";
+   $str = "1,2,3,4,5,6,7,8";
+   print_r (explode(',',$str));
+   echo "<hr>";
+   
    }
 
 
