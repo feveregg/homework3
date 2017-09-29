@@ -37,7 +37,7 @@ class main {
    public function character($text) {
 
    echo "<h1>character function demo</h1>";
-   echo chr(072);
+   echo chr(074);
    echo "<hr>";
 
    }
