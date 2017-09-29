@@ -6,7 +6,7 @@ $obj->trimthis($text);
 $obj->cslash($text);
 $obj->character($text);
 $obj->splitthis();
-
+$obj->joinstring();
 
 class main {
 
@@ -47,6 +47,15 @@ class main {
    echo "<h1>explode function demo</h1>";
    $str = "1,2,3,4,5,6,7,8";
    print_r (explode(',',$str));
+   echo "<hr>";
+   
+   }
+
+   public function joinstring() {
+   
+   echo "<h1>implode function demo</h1>";
+   $str = array("this","is","text","example");
+   echo implode (" ",$str);
    echo "<hr>";
    
    }
