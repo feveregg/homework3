@@ -22,8 +22,10 @@ $obj->arraychunk();
 $obj->arrcombine();
 $obj->arrcount();
 $obj->arrmerge();
-
-
+$obj->arrsort();
+$obj->arrproduct();
+$obj->arrreverse();
+$obj->arrsearch();
 
 
 class main {
@@ -190,6 +192,50 @@ class main {
    
    }
 
+
+   public function arrsort() {
+   
+   echo "<h1>array sort function demo</h1>";
+   $arrayA = array(20,70,30,90);
+   $arrayB = array(7,3,5,9);
+   array_multisort($arrayA,$arrayB);
+   var_dump($arrayA);
+   var_dump($arrayB);
+   echo "<hr>";
+   
+   }
+
+
+   public function arrproduct() {
+   
+   echo "<h1>array product function demo</h1>";
+   $arrayC = array(2,3);
+   echo array_product($arrayC);
+   echo "<hr>";
+   
+   }
+
+
+   public function arrreverse() {
+   
+   echo "<h1>array reverse demo</h1>";
+   $imput = array(1,2,3,4,5);
+   $reverse = array_reverse($imput);
+   print_r($imput);
+   print_r($reverse);
+   echo "<hr>";
+   
+   }
+
+
+   public function arrsearch() {
+   
+   echo"<h1>array search demo</h1>";
+   $arraycolor = array("blue","red","yellow");
+   print_r(array_search("yellow", $arraycolor));
+   echo "<hr>";
+   
+   }
 
 
 
